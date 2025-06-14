@@ -46,7 +46,7 @@ def update_job_status(job_id: str, status: str, progress: int, completed_at: str
     Update job status in the FastAPI application
     """
     try:
-        url = f"http://localhost:8000/jobs/{job_id}/status"
+        url = f"http://backend:8000/jobs/{job_id}/status"
         params = {"status": status, "progress": progress}
         if completed_at:
             params["completed_at"] = completed_at
