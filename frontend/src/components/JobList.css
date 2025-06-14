@@ -1,0 +1,18 @@
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.job-list-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: light) {
+  .job-list-empty {
+    color: #666;
+  }
+}
